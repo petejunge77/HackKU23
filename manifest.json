@@ -1,0 +1,31 @@
+{
+  "name": "Bionic Reading Extension",
+  "description": "Bold the beginning of each word on the page to enhance dyslexic readers' ability to digest the page in an efficient manner.",
+  "version": "1.0",
+  "manifest_version": 3,
+  "action": {
+    "default_popup": "hello.html",
+    "default_icon": "images/icon.png"
+  },
+
+
+
+  "background": {
+    "service_worker": "background.js"
+  },
+
+
+  "permissions": ["activeTab", "scripting"],
+
+  "commands": {
+    "toggle-extension": {
+      "suggested_key": {
+        "default": "Ctrl+B",
+        "mac": "Command+B"
+      },
+      "description": "Toggle Bionic Reading Extension"
+    }
+  }
+}
+
+
